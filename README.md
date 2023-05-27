@@ -1,0 +1,2 @@
+# MyCsgoConfig
+Csgo config
