@@ -1,0 +1,41 @@
+echo "[-] loading autoexec.cfg..."
+
+// common
+fps_max "401"
+cq_netgraph "1"
+
+
+//view model
+viewmodel_fov "68" 
+viewmodel_offset_x "2.5"
+viewmodel_offset_y "0"
+viewmodel_offset_z "-1.5"
+viewmodel_presetpos "3"
+cl_viewmodel_shift_left_amt "1.5"
+cl_viewmodel_shift_right_amt "0.75" 
+viewmodel_recoil "0"
+cl_righthand "1"
+cl_bob_lower_amt "21"
+cl_bobamt_lat "0.33"
+cl_bobamt_vert "0.14"
+cl_bobcycle "0.98"
+
+// Mouse dpi is 400-600-800-1000
+sensitivity "1.2"
+
+// Binding
+bind "=" "toggleconsole"
+bind "n" "noclip"
+bind "q" "slot3; slot2"  // -> switch(have(pistol) ? pistol : knife
+unbind "CAPSLOCK"
+alias +jump-action "+jump"
+alias -jump-action "-jump"
+bind "mwheelup" "+jump-action"
+bind "mwheeldown" "+jump-action"
+bind "MOUSE1" "+attack"
+bind "MOUSE2" "+attack2"
+bind "MOUSE3" "player_ping"
+bind "MOUSE4" "slot8"
+bind "MOUSE5" "slot7"
+
+echo "'autoexec.cfg' loaded!"
